@@ -1,6 +1,5 @@
 public class PowerFunction {
 
-
     public int getPowerOfNumber(int a, int b) {
 
         int result = 1;
@@ -8,7 +7,6 @@ public class PowerFunction {
 
             result = result * a;
         }
-
         return result;
     }
 }

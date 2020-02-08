@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SpotifyAPI" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-07T15:23:12" hostname="admin1-HP-EliteBook-Folio-9480m" time="1.707">
+<testsuite name="SpotifyAPI" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-08T13:19:29" hostname="admin1-HP-EliteBook-Folio-9480m" time="2.212">
   <properties/>
-  <testcase name="givenMethodForUpdatePlaylist" classname="SpotifyAPI" time="1.707">
-    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
+  <testcase name="givenMethodeForSpotifyAPI" classname="SpotifyAPI" time="2.212">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;401&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;401&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -49,7 +49,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at SpotifyAPI.givenMethodForUpdatePlaylist(SpotifyAPI.java:97)
+	at SpotifyAPI.givenMethodeForSpotifyAPI(SpotifyAPI.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,12 +105,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <system-out><![CDATA[{
-    "error": {
-        "status": 404,
-        "message": "Invalid playlist Id"
-    }
-}
-]]></system-out>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

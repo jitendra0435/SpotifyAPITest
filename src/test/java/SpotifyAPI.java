@@ -1,11 +1,9 @@
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,47 +12,47 @@ import static io.restassured.RestAssured.given;
 public class SpotifyAPI {
 
     String tokenValue;
-    //String iD="k300wijg016de4ddy0e5yme8j";
     String userID;
+    String playListID;
 
     @BeforeMethod
     public void setUp() {
 
-        tokenValue = "Bearer BQBKqTXCOKVMvfJSYSBKBqWg4S2V2M7UXX7sf9dXIeKY360L8iIK9R8kImJ6qXJcg-KN268TiAsQ203hpcJqoUw56t2fAtMewhqYUQTh2VSJNvoKAu5mffDa0yxaXbchzp7sfbx6sLpac5vkBOGleu8tz9h8uCYbV3Yf_D59b5p4WyXM80xO27OiYvDroKphBSowCcDXifiexdrE79ZWp4nmsdU5aJYc3Te7JyTdLtWG9wsA-rQDADchVaO4aOvXSXkovZYcA76IwTQMpPY9OaTwGewGEQ";
+        tokenValue = "Bearer BQAK13zIZdcBTsxMYns18DF5G21pTRHIcqxQeZPTRpgXy0R9Mm8_bxuJlBnKsrvoaNP8sWPo_IpZz1qw2cx" +
+                "_6QX_2F7RPbKvOpD3Vns18IYu6ZF3xh2kLZQMHl0b24cJjwInzkcKbDQFigvett8APAS3-oeBRRbc14XAMA6nB707fMw5E_" +
+                "-CXQOy9CVlEd_vaKfM_c9jarSaYbRgYjlZAhp5oRAipRv4rsi_lfEA7h52yh0X-AigQ0Q09WwQZKxCjA1U_dccoCZ8nBv1_H3P8lsWhUOldg";
         RestAssured.baseURI = "https://developer.spotify.com/";
 
     }
 
     @Test
-    //
-    public void givenMethodeFor() throws ParseException {
+    public void givenMethodeForSpotifyAPI() throws ParseException {
+
         Response response = RestAssured.given()
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
                 .header("Authorization", tokenValue)
                 .when()
                 .get("https://api.spotify.com/v1/me");
-        response.prettyPrint();
         response.then().assertThat().statusCode(200);
-
         JSONObject object = (JSONObject) new JSONParser().parse(response.prettyPrint());
-        userID= (String) object.get("id");
+        userID = (String) object.get("id");
 
+        /*..................................................................................................*/
 
-    //For varify userID..>>>>>>>>>>>>>>>>
-
+        //For varify userID
         Response response1 = RestAssured.given()
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
                 .header("Authorization", tokenValue)
                 .when()
                 .get("https://api.spotify.com/v1/me");
-        response1.prettyPrint();
         response1.then().assertThat().statusCode(200);
-        response1.then().assertThat().body("id",Matchers.equalTo(userID));
+        response1.then().assertThat().body("id", Matchers.equalTo(userID));
 
-    //For total number of playlist>>>>>>>>>>>>
+     /*..................................................................................................*/
 
+        //For total number of playlist
         Response response2 = given()
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
@@ -64,37 +62,36 @@ public class SpotifyAPI {
                 .then()
                 .extract().response();
         int playlistCount = response2.path("total");
+        playListID=response2.path("items[1].id");
         response2.prettyPrint();
-        System.out.println("Playlist count: "+playlistCount);
 
+        /*..................................................................................................*/
 
-        //Count number of playList  >>>>
-
+        //Creating playlist
         Response response3 = RestAssured.given()
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
                 .header("Authorization", tokenValue)
 
-                .body("{\"name\":\"OLD SONGS\",\"description\":\"songs are cool\",\"public\":\"false\"}")
+                .body("{\"name\":\"Rap songs\",\"description\":\"songs are cool\",\"public\":\"false\"}")
                 .when()
-                .post("\thttps://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j/playlists");
-        response3.prettyPrint();
+                .post("\thttps://api.spotify.com/v1/users/" + userID + "/playlists");
+
         response3.then().assertThat().statusCode(201);
-    }
 
+        /*..................................................................................................*/
 
-    @Test
-    public void givenMethodForUpdatePlaylist() {
-        Response response = RestAssured.given()
+       //for Updating the playList Details
+        Response response5 =RestAssured. given()
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
-                .header("Authorization", tokenValue)
-
-                .body("{\"name\":\"OLD SONGS\",\"description\":\"Songs Are sleepy\",\"public\":false}")
+                .header("Authorization",tokenValue)
+                .body("{\"name\":\"Marathi songs\",\"description\":\"songs are good\",\"public\":false}")
                 .when()
-                .put("https://api.spotify.com/v1/playlists/k300wijg016de4ddy0e5yme8j");
-        response.prettyPrint();
-        response.then().assertThat().statusCode(200);
 
+                .put("https://api.spotify.com/v1/playlists/"+playListID)
+                .then()
+                .extract().response();
+        response5.prettyPrint();
     }
 }

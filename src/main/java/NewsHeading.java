@@ -7,6 +7,7 @@ import java.util.*;
 
 public class NewsHeading{
 
+
     static List<String> listOfWords(List<String> list) {
 
         List<String> words = new ArrayList<>();
@@ -20,6 +21,7 @@ public class NewsHeading{
 
         return words;
     }
+
 
     public static  String getPopularNewsHeading(Map<String, Integer> mapData, String mostOccuredWord) {
         int value = 0;
@@ -37,6 +39,7 @@ public class NewsHeading{
         return mostPopular;
     }
 
+
     static Map<String, Integer> findMaxCountWord(List<String> wordList) {
         Map<String, Integer> wordMap = new HashMap<>();
         for (String i : wordList) {
@@ -46,6 +49,7 @@ public class NewsHeading{
         wordMap.entrySet().stream().forEach(System.out::println);
         return wordMap;
     }
+
 
     public static String getMaxCountWordInMap(Map<String, Integer> countMap) {
 
@@ -112,13 +116,19 @@ public class NewsHeading{
 
         }
         System.out.println("Data :size" + newsPointMap.size());
+
         newsPointMap.entrySet().stream().forEach(System.out::println);
+
         List<String> wordList = listOfWords(newsHeadingsList);
+
         wordList.stream().forEach(System.out::println);
+
         Map<String, Integer> maxCountWordMap = findMaxCountWord(wordList);
         String countWordInMap = getMaxCountWordInMap(maxCountWordMap);
+
         System.out.println("Most Occured word is :" + countWordInMap);
         String popularNewsHeading = getPopularNewsHeading(newsPointMap, countWordInMap);
+
         System.out.println(popularNewsHeading);
     }
 }
