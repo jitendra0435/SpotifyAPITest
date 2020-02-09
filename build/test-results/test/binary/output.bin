@@ -1,0 +1,697 @@
+{
+    "country": "IN",
+     "display_name": "jitendra",
+'    "email": "jitupatil937@gmail.com",
+    "explicit_content": {
+!        "filter_enabled": false,
+        "filter_locked": false
+    },
+    "external_urls": {
+M        "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+J    "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+'    "id": "k300wijg016de4ddy0e5yme8j",
+    "images": [
+	        
+    ],
+    "product": "open",
+    "type": "user",
+4    "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+}
+=========28
+{
+f    "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j/playlists?offset=0&limit=20",
+    "items": [
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/24a6n38zECmg6EnC87uyLg"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/24a6n38zECmg6EnC87uyLg",
+,            "id": "24a6n38zECmg6EnC87uyLg",
+            "images": [
+                
+            ],
+!            "name": "Rap songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MixlMTA4M2NmZDFlYTMxN2YyYzg0NTRiMDBkMDZlZTViNTUwZDFkNTRk",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/24a6n38zECmg6EnC87uyLg/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:24a6n38zECmg6EnC87uyLg"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/47lsyccLYDPJgWJgauwU0l"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/47lsyccLYDPJgWJgauwU0l",
+,            "id": "47lsyccLYDPJgWJgauwU0l",
+            "images": [
+                
+            ],
+!            "name": "Rap songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "Miw0N2I0Yjc5M2Q1YTk1YTRkYTlmYzgyYWJhNDE1YWU1ZGYzNDQxYTVk",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/47lsyccLYDPJgWJgauwU0l/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:47lsyccLYDPJgWJgauwU0l"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/0WlL0AGD8wWC3cOj7B84NF"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/0WlL0AGD8wWC3cOj7B84NF",
+,            "id": "0WlL0AGD8wWC3cOj7B84NF",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCxjZjM5YzY0NjNkZGE3ODQ0ZTViYTM0YzlhMDBjMDM0MmFiNjRkMGFk",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/0WlL0AGD8wWC3cOj7B84NF/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:0WlL0AGD8wWC3cOj7B84NF"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/4MhaiQY6kwRkjb3vmyT8eX"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/4MhaiQY6kwRkjb3vmyT8eX",
+,            "id": "4MhaiQY6kwRkjb3vmyT8eX",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCw5NDNkOTg0NTUwNjA1NWJiODA2MDk3MGYyYzQ3Mzg4YmUzZjIyMGZk",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/4MhaiQY6kwRkjb3vmyT8eX/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:4MhaiQY6kwRkjb3vmyT8eX"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/3YaaQAOoY0akH6GDabN8pv"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/3YaaQAOoY0akH6GDabN8pv",
+,            "id": "3YaaQAOoY0akH6GDabN8pv",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCxlODBlM2Y2NTYwYWIzZmE0ZTExYWFlY2U0M2NkY2VhYzZkNjdmMzg5",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/3YaaQAOoY0akH6GDabN8pv/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:3YaaQAOoY0akH6GDabN8pv"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/4l7x4499x2giFoFIBFzMXz"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/4l7x4499x2giFoFIBFzMXz",
+,            "id": "4l7x4499x2giFoFIBFzMXz",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCwyNTk3MGIzY2RiNDgxNWQyNzIzNTRlMTg5ZDI3MTJmZjQyYzRhZTY4",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/4l7x4499x2giFoFIBFzMXz/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:4l7x4499x2giFoFIBFzMXz"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/7HlVwasfK6ryV2giAGs3zd"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/7HlVwasfK6ryV2giAGs3zd",
+,            "id": "7HlVwasfK6ryV2giAGs3zd",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCwxYWY2Yjk5ODZiZjU0ZjViN2NmYTg0ZWU4YzRjMDI2ODRhNDBlMDBj",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/7HlVwasfK6ryV2giAGs3zd/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:7HlVwasfK6ryV2giAGs3zd"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/4MyJoZiKLknyb8iopZSEA9"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/4MyJoZiKLknyb8iopZSEA9",
+,            "id": "4MyJoZiKLknyb8iopZSEA9",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCwzMzZjOWIwOWIxZjhkZjRiMTcyMjc5ZjlmYjQ1MDVmZjQ4NDViMmUw",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/4MyJoZiKLknyb8iopZSEA9/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:4MyJoZiKLknyb8iopZSEA9"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/6UG0nINAP6nbCpk97OTV97"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/6UG0nINAP6nbCpk97OTV97",
+,            "id": "6UG0nINAP6nbCpk97OTV97",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCxjZmNkZjVkMTcxNGRiZmM2MWQxMDg5MTM5MzZlNWUwNDBjYTkxOTQ2",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/6UG0nINAP6nbCpk97OTV97/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:6UG0nINAP6nbCpk97OTV97"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are good",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/6s0MAYD0mCpkj5Ud9UTv1g"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/6s0MAYD0mCpkj5Ud9UTv1g",
+,            "id": "6s0MAYD0mCpkj5Ud9UTv1g",
+            "images": [
+                
+            ],
+%            "name": "Marathi songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "NCw2ZjFkYzE5MDNiYWUxMjg5Nzg1YzZhZDQ3OTAxZDY0MzllNTY1ZDhl",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/6s0MAYD0mCpkj5Ud9UTv1g/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:6s0MAYD0mCpkj5Ud9UTv1g"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/7dVcFSTasqZD9JJfneNEPW"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/7dVcFSTasqZD9JJfneNEPW",
+,            "id": "7dVcFSTasqZD9JJfneNEPW",
+            "images": [
+                
+            ],
+!            "name": "Rap songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MixjYWM5Yjk5NTQxMmE1YmMyNjc0ZTJmOTI1MjM0ZDY5ZmU1MjRjYmQ5",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/7dVcFSTasqZD9JJfneNEPW/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:7dVcFSTasqZD9JJfneNEPW"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/3T186UFqX4CxN40d4JSHvX"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/3T186UFqX4CxN40d4JSHvX",
+,            "id": "3T186UFqX4CxN40d4JSHvX",
+            "images": [
+                
+            ],
+!            "name": "Rap songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MixhNjhhNWQ0YjE4NjRlN2VkZTUzMDk3ODQxY2YzZjJjMThhOGM0NjUw",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/3T186UFqX4CxN40d4JSHvX/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:3T186UFqX4CxN40d4JSHvX"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/3JPp04ZgqwL9z8PvtKOPPz"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/3JPp04ZgqwL9z8PvtKOPPz",
+,            "id": "3JPp04ZgqwL9z8PvtKOPPz",
+            "images": [
+                
+            ],
+!            "name": "Rap songs",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "Miw0ZGUxYjI5ZjUxNGMxMDViNDg2ZTBjZTU1NjU2MTUzOGY0YTAzMDU0",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/3JPp04ZgqwL9z8PvtKOPPz/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:3JPp04ZgqwL9z8PvtKOPPz"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/1TAjHcj8C14pWkFcEImpNU"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/1TAjHcj8C14pWkFcEImpNU",
+,            "id": "1TAjHcj8C14pWkFcEImpNU",
+            "images": [
+                
+            ],
+$            "name": "English song",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MixhNDRhOTU0NTllNTc4ZTU4ZDBmYWQzYWQ2OTJmM2E2OWU2MDY2NzQz",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/1TAjHcj8C14pWkFcEImpNU/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:1TAjHcj8C14pWkFcEImpNU"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/2NKpZWDitz6Oegtr8B2Goc"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/2NKpZWDitz6Oegtr8B2Goc",
+,            "id": "2NKpZWDitz6Oegtr8B2Goc",
+            "images": [
+                
+            ],
+!            "name": "OLD SONGS",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "Miw1NDE4ZjU5MjkzMTA5YjdlZmZiMjM2Yzg4MjI2YzNjMGQ2ZmVjMzE0",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/2NKpZWDitz6Oegtr8B2Goc/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:2NKpZWDitz6Oegtr8B2Goc"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/7Kn1w6DzVoSnTukINzt0Ga"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/7Kn1w6DzVoSnTukINzt0Ga",
+,            "id": "7Kn1w6DzVoSnTukINzt0Ga",
+            "images": [
+                
+            ],
+!            "name": "OLD SONGS",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MixkOGY1YjY2ZDQ1MzQzMmViOWIwY2ViMDkzZmY1OTFkZmI2NDZjNzk3",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/7Kn1w6DzVoSnTukINzt0Ga/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:7Kn1w6DzVoSnTukINzt0Ga"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/4fLtSFq252nNcjYyKKmO4C"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/4fLtSFq252nNcjYyKKmO4C",
+,            "id": "4fLtSFq252nNcjYyKKmO4C",
+            "images": [
+                
+            ],
+!            "name": "OLD SONGS",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MixlMTQzZGQwZGIyMDRmZDRmZTcyODE2N2NiMTA3NjczZTQ1YWM4Zjg3",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/4fLtSFq252nNcjYyKKmO4C/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:4fLtSFq252nNcjYyKKmO4C"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/3WEciJvKVyeELV2WJIaiqa"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/3WEciJvKVyeELV2WJIaiqa",
+,            "id": "3WEciJvKVyeELV2WJIaiqa",
+            "images": [
+                
+            ],
+!            "name": "OLD SONGS",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MiwwNzE0ZTUyZDhhMmMwYjNiYjdiY2M3Mjc5NjRiZmQ0ZWFmZTI0NTU5",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/3WEciJvKVyeELV2WJIaiqa/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:3WEciJvKVyeELV2WJIaiqa"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/3TsfXCjdtEPXpJGuyKx2Ld"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/3TsfXCjdtEPXpJGuyKx2Ld",
+,            "id": "3TsfXCjdtEPXpJGuyKx2Ld",
+            "images": [
+                
+            ],
+!            "name": "OLD SONGS",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "MixiMzhmOTc0NjM1ODlmZDAwYzhiY2Q0NDA2NmQzNDE0MTQwMjlmMDUx",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/3TsfXCjdtEPXpJGuyKx2Ld/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:3TsfXCjdtEPXpJGuyKx2Ld"
+        },
+
+        {
+$            "collaborative": false,
+-            "description": "songs are cool",
+            "external_urls": {
+V                "spotify": "https://open.spotify.com/playlist/6DHCGqRmhpn03EM8dsYQOa"
+            },
+S            "href": "https://api.spotify.com/v1/playlists/6DHCGqRmhpn03EM8dsYQOa",
+,            "id": "6DHCGqRmhpn03EM8dsYQOa",
+            "images": [
+                
+            ],
+!            "name": "OLD SONGS",
+            "owner": {
+,                "display_name": "jitendra",
+#                "external_urls": {
+Y                    "spotify": "https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j"
+                },
+V                "href": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j",
+3                "id": "k300wijg016de4ddy0e5yme8j",
+                 "type": "user",
+@                "uri": "spotify:user:k300wijg016de4ddy0e5yme8j"
+            },
+#            "primary_color": null,
+            "public": false,
+W            "snapshot_id": "Miw2Y2Q3NTgwMzlkMGM4Y2EzNzljOWRhNmEzYWU3MGVkNzdmMDFkNmIz",
+            "tracks": {
+^                "href": "https://api.spotify.com/v1/playlists/6DHCGqRmhpn03EM8dsYQOa/tracks",
+                "total": 0
+            },
+             "type": "playlist",
+=            "uri": "spotify:playlist:6DHCGqRmhpn03EM8dsYQOa"
+
+        }
+    ],
+    "limit": 20,
+g    "next": "https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j/playlists?offset=20&limit=20",
+    "offset": 0,
+    "previous": null,
+    "total": 28
+}
+

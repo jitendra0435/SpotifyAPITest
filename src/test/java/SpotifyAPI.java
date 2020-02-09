@@ -18,9 +18,7 @@ public class SpotifyAPI {
     @BeforeMethod
     public void setUp() {
 
-        tokenValue = "Bearer BQAK13zIZdcBTsxMYns18DF5G21pTRHIcqxQeZPTRpgXy0R9Mm8_bxuJlBnKsrvoaNP8sWPo_IpZz1qw2cx" +
-                "_6QX_2F7RPbKvOpD3Vns18IYu6ZF3xh2kLZQMHl0b24cJjwInzkcKbDQFigvett8APAS3-oeBRRbc14XAMA6nB707fMw5E_" +
-                "-CXQOy9CVlEd_vaKfM_c9jarSaYbRgYjlZAhp5oRAipRv4rsi_lfEA7h52yh0X-AigQ0Q09WwQZKxCjA1U_dccoCZ8nBv1_H3P8lsWhUOldg";
+        tokenValue = "Bearer BQBU2YpzjgID2ueSRLSgam4oPbCKLlc0cc48-KmFD2qKAqHF0aMA3oSPCMqd5vG3jt_slRMOCgmtMpCqORVXm8gPbMsKV4e4JwkY25mSFi-4hcg2zvFNk308mcb6XKhKAXQ7DhlPMSe9M3wQUASnD4K96z5bdOhe7Tp2HdAMSDPueyYzQUQweygbYFo6IwizSnE1AeehtK7vcDiGuM10FhyBPYXgQZ1odMbuDyPQFhN_Ijae2VQf7RWMOtYGoRqrwayRmboragrkkmKGpvxbxSDTkBGwkg";
         RestAssured.baseURI = "https://developer.spotify.com/";
 
     }
@@ -62,6 +60,7 @@ public class SpotifyAPI {
                 .then()
                 .extract().response();
         int playlistCount = response2.path("total");
+        System.out.println("========="+playlistCount);
         playListID=response2.path("items[1].id");
         response2.prettyPrint();
 
@@ -92,6 +91,7 @@ public class SpotifyAPI {
                 .put("https://api.spotify.com/v1/playlists/"+playListID)
                 .then()
                 .extract().response();
+        //response5.then().assertThat().body("total",Matchers.equalTo(playlistCount));
         response5.prettyPrint();
     }
 }

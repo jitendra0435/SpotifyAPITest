@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.212s</div>
+<div class="counter">3.454s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,124 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="givenMethodeForSpotifyAPI"></a>
-<h3 class="failures">givenMethodeForSpotifyAPI</h3>
-<span class="code">
-<pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;401&gt;.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at SpotifyAPI.givenMethodeForSpotifyAPI(SpotifyAPI.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:139)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:89)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:131)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -189,11 +78,693 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 </tr>
 </thead>
 <tr>
-<td class="failures">givenMethodeForSpotifyAPI</td>
-<td class="failures">2.212s</td>
-<td class="failures">failed</td>
+<td class="success">givenMethodeForSpotifyAPI</td>
+<td class="success">3.454s</td>
+<td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>{
+    &quot;country&quot;: &quot;IN&quot;,
+    &quot;display_name&quot;: &quot;jitendra&quot;,
+    &quot;email&quot;: &quot;jitupatil937@gmail.com&quot;,
+    &quot;explicit_content&quot;: {
+        &quot;filter_enabled&quot;: false,
+        &quot;filter_locked&quot;: false
+    },
+    &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+    },
+    &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 0
+    },
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+    &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+    &quot;images&quot;: [
+        
+    ],
+    &quot;product&quot;: &quot;open&quot;,
+    &quot;type&quot;: &quot;user&quot;,
+    &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+}
+=========28
+{
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j/playlists?offset=0&amp;limit=20&quot;,
+    &quot;items&quot;: [
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/24a6n38zECmg6EnC87uyLg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/24a6n38zECmg6EnC87uyLg&quot;,
+            &quot;id&quot;: &quot;24a6n38zECmg6EnC87uyLg&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Rap songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixlMTA4M2NmZDFlYTMxN2YyYzg0NTRiMDBkMDZlZTViNTUwZDFkNTRk&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/24a6n38zECmg6EnC87uyLg/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:24a6n38zECmg6EnC87uyLg&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/47lsyccLYDPJgWJgauwU0l&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/47lsyccLYDPJgWJgauwU0l&quot;,
+            &quot;id&quot;: &quot;47lsyccLYDPJgWJgauwU0l&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Rap songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;Miw0N2I0Yjc5M2Q1YTk1YTRkYTlmYzgyYWJhNDE1YWU1ZGYzNDQxYTVk&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/47lsyccLYDPJgWJgauwU0l/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:47lsyccLYDPJgWJgauwU0l&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/0WlL0AGD8wWC3cOj7B84NF&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/0WlL0AGD8wWC3cOj7B84NF&quot;,
+            &quot;id&quot;: &quot;0WlL0AGD8wWC3cOj7B84NF&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCxjZjM5YzY0NjNkZGE3ODQ0ZTViYTM0YzlhMDBjMDM0MmFiNjRkMGFk&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/0WlL0AGD8wWC3cOj7B84NF/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:0WlL0AGD8wWC3cOj7B84NF&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/4MhaiQY6kwRkjb3vmyT8eX&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4MhaiQY6kwRkjb3vmyT8eX&quot;,
+            &quot;id&quot;: &quot;4MhaiQY6kwRkjb3vmyT8eX&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCw5NDNkOTg0NTUwNjA1NWJiODA2MDk3MGYyYzQ3Mzg4YmUzZjIyMGZk&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4MhaiQY6kwRkjb3vmyT8eX/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:4MhaiQY6kwRkjb3vmyT8eX&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/3YaaQAOoY0akH6GDabN8pv&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3YaaQAOoY0akH6GDabN8pv&quot;,
+            &quot;id&quot;: &quot;3YaaQAOoY0akH6GDabN8pv&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCxlODBlM2Y2NTYwYWIzZmE0ZTExYWFlY2U0M2NkY2VhYzZkNjdmMzg5&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3YaaQAOoY0akH6GDabN8pv/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:3YaaQAOoY0akH6GDabN8pv&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/4l7x4499x2giFoFIBFzMXz&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4l7x4499x2giFoFIBFzMXz&quot;,
+            &quot;id&quot;: &quot;4l7x4499x2giFoFIBFzMXz&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCwyNTk3MGIzY2RiNDgxNWQyNzIzNTRlMTg5ZDI3MTJmZjQyYzRhZTY4&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4l7x4499x2giFoFIBFzMXz/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:4l7x4499x2giFoFIBFzMXz&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/7HlVwasfK6ryV2giAGs3zd&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/7HlVwasfK6ryV2giAGs3zd&quot;,
+            &quot;id&quot;: &quot;7HlVwasfK6ryV2giAGs3zd&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCwxYWY2Yjk5ODZiZjU0ZjViN2NmYTg0ZWU4YzRjMDI2ODRhNDBlMDBj&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/7HlVwasfK6ryV2giAGs3zd/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:7HlVwasfK6ryV2giAGs3zd&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/4MyJoZiKLknyb8iopZSEA9&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4MyJoZiKLknyb8iopZSEA9&quot;,
+            &quot;id&quot;: &quot;4MyJoZiKLknyb8iopZSEA9&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCwzMzZjOWIwOWIxZjhkZjRiMTcyMjc5ZjlmYjQ1MDVmZjQ4NDViMmUw&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4MyJoZiKLknyb8iopZSEA9/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:4MyJoZiKLknyb8iopZSEA9&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/6UG0nINAP6nbCpk97OTV97&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/6UG0nINAP6nbCpk97OTV97&quot;,
+            &quot;id&quot;: &quot;6UG0nINAP6nbCpk97OTV97&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCxjZmNkZjVkMTcxNGRiZmM2MWQxMDg5MTM5MzZlNWUwNDBjYTkxOTQ2&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/6UG0nINAP6nbCpk97OTV97/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:6UG0nINAP6nbCpk97OTV97&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are good&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/6s0MAYD0mCpkj5Ud9UTv1g&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/6s0MAYD0mCpkj5Ud9UTv1g&quot;,
+            &quot;id&quot;: &quot;6s0MAYD0mCpkj5Ud9UTv1g&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Marathi songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;NCw2ZjFkYzE5MDNiYWUxMjg5Nzg1YzZhZDQ3OTAxZDY0MzllNTY1ZDhl&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/6s0MAYD0mCpkj5Ud9UTv1g/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:6s0MAYD0mCpkj5Ud9UTv1g&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/7dVcFSTasqZD9JJfneNEPW&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/7dVcFSTasqZD9JJfneNEPW&quot;,
+            &quot;id&quot;: &quot;7dVcFSTasqZD9JJfneNEPW&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Rap songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixjYWM5Yjk5NTQxMmE1YmMyNjc0ZTJmOTI1MjM0ZDY5ZmU1MjRjYmQ5&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/7dVcFSTasqZD9JJfneNEPW/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:7dVcFSTasqZD9JJfneNEPW&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/3T186UFqX4CxN40d4JSHvX&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3T186UFqX4CxN40d4JSHvX&quot;,
+            &quot;id&quot;: &quot;3T186UFqX4CxN40d4JSHvX&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Rap songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixhNjhhNWQ0YjE4NjRlN2VkZTUzMDk3ODQxY2YzZjJjMThhOGM0NjUw&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3T186UFqX4CxN40d4JSHvX/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:3T186UFqX4CxN40d4JSHvX&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/3JPp04ZgqwL9z8PvtKOPPz&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3JPp04ZgqwL9z8PvtKOPPz&quot;,
+            &quot;id&quot;: &quot;3JPp04ZgqwL9z8PvtKOPPz&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;Rap songs&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;Miw0ZGUxYjI5ZjUxNGMxMDViNDg2ZTBjZTU1NjU2MTUzOGY0YTAzMDU0&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3JPp04ZgqwL9z8PvtKOPPz/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:3JPp04ZgqwL9z8PvtKOPPz&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/1TAjHcj8C14pWkFcEImpNU&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/1TAjHcj8C14pWkFcEImpNU&quot;,
+            &quot;id&quot;: &quot;1TAjHcj8C14pWkFcEImpNU&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;English song&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixhNDRhOTU0NTllNTc4ZTU4ZDBmYWQzYWQ2OTJmM2E2OWU2MDY2NzQz&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/1TAjHcj8C14pWkFcEImpNU/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:1TAjHcj8C14pWkFcEImpNU&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/2NKpZWDitz6Oegtr8B2Goc&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/2NKpZWDitz6Oegtr8B2Goc&quot;,
+            &quot;id&quot;: &quot;2NKpZWDitz6Oegtr8B2Goc&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;OLD SONGS&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;Miw1NDE4ZjU5MjkzMTA5YjdlZmZiMjM2Yzg4MjI2YzNjMGQ2ZmVjMzE0&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/2NKpZWDitz6Oegtr8B2Goc/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:2NKpZWDitz6Oegtr8B2Goc&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/7Kn1w6DzVoSnTukINzt0Ga&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/7Kn1w6DzVoSnTukINzt0Ga&quot;,
+            &quot;id&quot;: &quot;7Kn1w6DzVoSnTukINzt0Ga&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;OLD SONGS&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixkOGY1YjY2ZDQ1MzQzMmViOWIwY2ViMDkzZmY1OTFkZmI2NDZjNzk3&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/7Kn1w6DzVoSnTukINzt0Ga/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:7Kn1w6DzVoSnTukINzt0Ga&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/4fLtSFq252nNcjYyKKmO4C&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4fLtSFq252nNcjYyKKmO4C&quot;,
+            &quot;id&quot;: &quot;4fLtSFq252nNcjYyKKmO4C&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;OLD SONGS&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixlMTQzZGQwZGIyMDRmZDRmZTcyODE2N2NiMTA3NjczZTQ1YWM4Zjg3&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/4fLtSFq252nNcjYyKKmO4C/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:4fLtSFq252nNcjYyKKmO4C&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/3WEciJvKVyeELV2WJIaiqa&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3WEciJvKVyeELV2WJIaiqa&quot;,
+            &quot;id&quot;: &quot;3WEciJvKVyeELV2WJIaiqa&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;OLD SONGS&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MiwwNzE0ZTUyZDhhMmMwYjNiYjdiY2M3Mjc5NjRiZmQ0ZWFmZTI0NTU5&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3WEciJvKVyeELV2WJIaiqa/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:3WEciJvKVyeELV2WJIaiqa&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/3TsfXCjdtEPXpJGuyKx2Ld&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3TsfXCjdtEPXpJGuyKx2Ld&quot;,
+            &quot;id&quot;: &quot;3TsfXCjdtEPXpJGuyKx2Ld&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;OLD SONGS&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;MixiMzhmOTc0NjM1ODlmZDAwYzhiY2Q0NDA2NmQzNDE0MTQwMjlmMDUx&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/3TsfXCjdtEPXpJGuyKx2Ld/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:3TsfXCjdtEPXpJGuyKx2Ld&quot;
+        },
+        {
+            &quot;collaborative&quot;: false,
+            &quot;description&quot;: &quot;songs are cool&quot;,
+            &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/playlist/6DHCGqRmhpn03EM8dsYQOa&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/6DHCGqRmhpn03EM8dsYQOa&quot;,
+            &quot;id&quot;: &quot;6DHCGqRmhpn03EM8dsYQOa&quot;,
+            &quot;images&quot;: [
+                
+            ],
+            &quot;name&quot;: &quot;OLD SONGS&quot;,
+            &quot;owner&quot;: {
+                &quot;display_name&quot;: &quot;jitendra&quot;,
+                &quot;external_urls&quot;: {
+                    &quot;spotify&quot;: &quot;https://open.spotify.com/user/k300wijg016de4ddy0e5yme8j&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;id&quot;: &quot;k300wijg016de4ddy0e5yme8j&quot;,
+                &quot;type&quot;: &quot;user&quot;,
+                &quot;uri&quot;: &quot;spotify:user:k300wijg016de4ddy0e5yme8j&quot;
+            },
+            &quot;primary_color&quot;: null,
+            &quot;public&quot;: false,
+            &quot;snapshot_id&quot;: &quot;Miw2Y2Q3NTgwMzlkMGM4Y2EzNzljOWRhNmEzYWU3MGVkNzdmMDFkNmIz&quot;,
+            &quot;tracks&quot;: {
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/playlists/6DHCGqRmhpn03EM8dsYQOa/tracks&quot;,
+                &quot;total&quot;: 0
+            },
+            &quot;type&quot;: &quot;playlist&quot;,
+            &quot;uri&quot;: &quot;spotify:playlist:6DHCGqRmhpn03EM8dsYQOa&quot;
+        }
+    ],
+    &quot;limit&quot;: 20,
+    &quot;next&quot;: &quot;https://api.spotify.com/v1/users/k300wijg016de4ddy0e5yme8j/playlists?offset=20&amp;limit=20&quot;,
+    &quot;offset&quot;: 0,
+    &quot;previous&quot;: null,
+    &quot;total&quot;: 28
+}
+
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -203,7 +774,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.3</a> at 08-Feb-2020, 6:49:32 PM</p>
+<a href="http://www.gradle.org">Gradle 4.10.3</a> at 09-Feb-2020, 1:34:17 PM</p>
 </div>
 </div>
 </body>
